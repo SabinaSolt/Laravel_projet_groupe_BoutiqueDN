@@ -39,8 +39,8 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
-
+    'debug' => env('APP_DEBUG', true),
+    'Debugbar' => Barryvdh\Debugbar\Facade::class,
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -174,7 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*
