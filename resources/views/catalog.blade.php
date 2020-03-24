@@ -23,10 +23,10 @@
             </div>
         </section>
 
-        <div>
+        <div class="">
             <button type="button" class="btn btn-outline-secondary float-right">Filtrer</button>
         </div>
-        <div class="controlSizeImg">
+        <div>
             <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
         </div>
         <div> <!-- partie texte sous la photo -->
