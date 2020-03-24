@@ -1,6 +1,6 @@
-html, body {
+.html .body {
     background-color: #fff;
-    color: #636b6f;
+    color: red;
     font-family: 'Encode Sans Expanded', 'Nunito', sans-serif;
     font-weight: 200;
     height: 100vh;
@@ -47,3 +47,4 @@ html, body {
 
 .m-b-md {
     margin-bottom: 30px;
+}
