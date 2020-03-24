@@ -33,7 +33,7 @@
             <div>
                 Nom du Produit
             </div>
-            <div>
+            <div class="barreFine">
                 Prix du Produit
             </div>
         </div>

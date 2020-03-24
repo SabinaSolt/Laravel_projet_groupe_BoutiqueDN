@@ -9,3 +9,6 @@ body{
     font-weight: bolder;
 }
 
+.barreFine{
+    border-bottom: 1px solid black;
+}
