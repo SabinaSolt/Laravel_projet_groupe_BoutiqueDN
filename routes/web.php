@@ -16,12 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
 Route::get('/product', function () {
     return view('product');
 });
+
 Route::get('/catalog', function () {
     return view('catalog');
 });
+
 Route::get('/basket', function () {
     return view('basket');
+});
+
+Route::get('/hometest', function () {
+    return view('hometest');
 });

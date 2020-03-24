@@ -1,0 +1,31 @@
+a {
+    font-size = 50px;
+}
+
+footer{
+    background-color: rgba(141, 16, 40);
+    bottom : fixed;
+}
+
+
+.btn-default
+
+{
+    background-color: rgba(141, 16, 40);
+
+    color:whitesmoke;
+
+    border-color: rgba(141, 16, 40);
+
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+
+
+    background-color: lightgrey;
+
+    color:rgba(141, 16, 40);
+
+    border-color: lightgray;
+
+}
