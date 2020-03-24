@@ -24,7 +24,7 @@
         </section>
 
         <div>
-            <button type="button">Filtrer</button>
+            <button type="button" class="btn btn-outline-secondary float-right">Filtrer</button>
         </div>
         <div class="controlSizeImg">
             <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
