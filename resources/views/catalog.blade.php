@@ -12,19 +12,28 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../public/styles.css">
+        <link rel="stylesheet" href="{{ asset("styles.css") }}">
     </head>
 
    <!-- content -->
     <body>
-        <div class="title m-b-md">
-            Catalogue
+        <div>
+            <h1 class="title">Catalogue</h1>
         </div>
         <div>
-            <img src="public/images/ours_olympique.jpg" alt="image ours">
+            <button type="button">Filtrer</button>
         </div>
         <div>
+            <img src="{{ asset("ours_olympique.jpg") }}" alt="image ours">
+        </div>
+        <div> <!-- partie texte sous la photo -->
+            <div>
+                Nom du Produit
+            </div>
+            <div>
+                Prix du Produit
+            </div>
+        </div>
 
-        </div>
     </body>
 </html>
