@@ -16,15 +16,18 @@
     </head>
 
    <!-- content -->
-    <body>
-        <div>
-            <h1 class="title">Catalogue</h1>
-        </div>
+    <body class="container-fluid">
+        <section class="">
+            <div class="">
+                <h1 class="title text-center text-uppercase">catalogue</h1>
+            </div>
+        </section>
+
         <div>
             <button type="button">Filtrer</button>
         </div>
-        <div>
-            <img src="{{ asset("ours_olympique.jpg") }}" alt="image ours">
+        <div class="controlSizeImg">
+            <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
         </div>
         <div> <!-- partie texte sous la photo -->
             <div>

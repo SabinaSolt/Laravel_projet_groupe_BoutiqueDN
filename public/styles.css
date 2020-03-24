@@ -1,6 +1,17 @@
+body{
+    background-color: #DADADA;
+}
+
 .title{
     color: black;
     font-family: Nunito, sans-serif;
     border-bottom: 1px solid black;
     font-weight: bolder;
+}
+
+.controlSizeTitle{
+    margin: 0px auto;
+}
+.controlSizeImg{
+    margin: 0px 30px;
 }
