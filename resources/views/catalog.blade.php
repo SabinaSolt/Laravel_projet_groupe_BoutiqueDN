@@ -27,10 +27,10 @@
             <button type="button" class="btn btn-outline-secondary float-right retraitFilter hidden">Filtrer</button>
         </div>
         <section class="flex-row">
-            <section class="col-lg-3- col-lg-3 col-md-3">
-                <div class="align-content-lg-center">
+            <section class="">
+                <div class="d-flex ">
                     <!-- first teddy bear-->
-                    <div class="col-lg-3 cadreGrey">
+                    <div class="offset-1 col-md-3 col-lg-3 cadreGrey">
                         <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
                         <div>
                             Ours Olympique
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <!-- second teddy bear-->
-                    <div class="col-lg-3">
+                    <div class="offset-1 col-md-3 offset-1">
                         <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
                         <div>
                             Ours Olympique
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <!-- third teddy bear -->
-                    <div class="col-lg-3">
+                    <div class="col-md-3 offset-1">
                         <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
                         <div>
                             Ours Olympique
