@@ -17,8 +17,8 @@
 
    <!-- content -->
     <body class="container-fluid">
-        <section class="">
-            <div class="">
+        <section class="flex-row">
+            <div class="align-content-center">
                 <h1 class="title text-center text-uppercase">catalogue</h1>
             </div>
         </section>
