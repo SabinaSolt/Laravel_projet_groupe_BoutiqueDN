@@ -25,8 +25,8 @@ Route::get('/catalog', function () {
     return view('catalog');
 });
 
-Route::get('/basket', function () {
-    return view('basket');
+Route::get('/cart', function () {
+    return view('cart');
 });
 
 Route::get('/hometest', function () {

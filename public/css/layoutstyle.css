@@ -1,13 +1,18 @@
-a {
-    font-size = 50px;
+body{
+    font-family: "Encode Sans";
 }
 
-footer{
+.footer{
+    color: whitesmoke;
+    min-height: 200px;
     background-color: rgba(141, 16, 40);
     bottom : fixed;
 }
 
+.navbar:hover{
+    color:rgba(141, 16, 40);
 
+}
 .btn-default
 
 {
@@ -29,3 +34,4 @@ footer{
     border-color: lightgray;
 
 }
+
