@@ -19,10 +19,13 @@ body{
         display: none;
     }
 }
-.barreFine {
-    border-bottom: 1px solid black;
-    margin-bottom: 20px;
-    padding: 20px;
+
+@media screen and (max-width: 431px) {
+    .barreFine {
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
 }
 
 .retraitFilter{
