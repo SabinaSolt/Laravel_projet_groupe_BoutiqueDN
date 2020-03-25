@@ -26,46 +26,49 @@
         <div class="">
             <button type="button" class="btn btn-outline-secondary float-right retraitFilter hidden">Filtrer</button>
         </div>
-        <section class="flex-row">
-            <section class="">
-                <div class="d-flex ">
-                    <!-- first teddy bear-->
-                    <div class="offset-1 col-md-3 col-lg-3 cadreGrey">
-                        <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
-                        <div class="flex-row">
-                            <div class="d-flex">
-                                <p>Ours Olympique</p>
-                                <button class="btn btn-outline-light"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
-                                <button class="btn btn-outline-light"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
-                            </div>
-                            <div class="barreFine font-weight-bold">
-                                40,00 €
-                            </div>
+            <div class="d-flex flex-wrap">
+                <!-- first teddy bear-->
+                <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
+                    <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+                    <div class="flex-row">
+                        <div class="d-flex align-items-center">
+                            <p>Ours Olympique</p>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
                         </div>
-                    </div>
-                    <!-- second teddy bear-->
-                    <div class="offset-1 col-md-3 offset-1">
-                        <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
-                        <div>
-                            Ours Olympique
-                            <div class="barreFine font-weight-bold">
-                                40,00 €
-                            </div>
-                        </div>
-                    </div>
-                    <!-- third teddy bear -->
-                    <div class="col-md-3 offset-1">
-                        <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
-                        <div>
-                            Ours Olympique
-                            <div class="barreFine font-weight-bold">
-                                40,00 €
-                            </div>
+                        <div class="barreFine font-weight-bold">
+                            <p>40,00 €</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </section>
+                <!-- second teddy bear-->
+                <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
+                    <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+                    <div class="flex-row">
+                        <div class="d-flex align-items-center">
+                            <p>Ours Olympique</p>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
+                        </div>
+                        <div class="barreFine font-weight-bold">
+                            <p>40,00 €</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- third teddy bear -->
+                <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
+                    <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+                    <div class="flex-row">
+                        <div class="d-flex align-items-center">
+                            <p>Ours Olympique</p>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
+                        </div>
+                        <div class="barreFine font-weight-bold">
+                            <p>40,00 €</p>
+                        </div>
+                    </div>
+                </div>
 
 
     </body>
