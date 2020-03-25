@@ -32,8 +32,12 @@
                     <!-- first teddy bear-->
                     <div class="offset-1 col-md-3 col-lg-3 cadreGrey">
                         <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
-                        <div>
-                            Ours Olympique
+                        <div class="flex-row">
+                            <div class="d-flex">
+                                <p>Ours Olympique</p>
+                                <img src="{{ asset ("pictures/share.png")}}"class="img-fluid ">
+                                <img src="{{ asset ("pictures/heart.png")}}"class="img-fluid">
+                            </div>
                             <div class="barreFine font-weight-bold">
                                 40,00 €
                             </div>
