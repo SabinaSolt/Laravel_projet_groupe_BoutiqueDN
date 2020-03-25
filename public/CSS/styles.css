@@ -10,9 +10,19 @@ body{
     font-weight: bolder;
 }
 
-.barreFine{
+@media screen and (min-width: 430px) {
+    .cadreGrey{
+        border: 1px solid grey;
+        border-radius: 20px;
+    }
+    .hidden{
+        display: none;
+    }
+}
+.barreFine {
     border-bottom: 1px solid black;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .retraitFilter{

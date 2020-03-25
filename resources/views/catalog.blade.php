@@ -24,13 +24,13 @@
         </section>
 
         <div class="">
-            <button type="button" class="btn btn-outline-secondary float-right retraitFilter">Filtrer</button>
+            <button type="button" class="btn btn-outline-secondary float-right retraitFilter hidden">Filtrer</button>
         </div>
         <section class="flex-row">
             <section class="col-lg-3- col-lg-3 col-md-3">
                 <div class="align-content-lg-center">
                     <!-- first teddy bear-->
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 cadreGrey">
                         <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
                         <div>
                             Ours Olympique
