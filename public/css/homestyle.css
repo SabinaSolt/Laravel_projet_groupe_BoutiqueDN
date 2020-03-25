@@ -1,11 +1,14 @@
 
 head, body {
-    font-family: "Encode Sans";
+    font-family: "Encode Sans Expanded";
 }
  .hero {
     background-image:url("../pictures/yolo.jpg");
-    background-position: right bottom;
-    height: 70vh;
+    background-position: center bottom;
+
+        min-height:200px;
+     height:30vh;
+
 }
 
  .hero h2 {
@@ -23,6 +26,35 @@ head, body {
 
      font-weight: bold;
  }
+
+ .text_description {
+     font-size: 20px;
+     font-color: black;
+ }
+
+ .text_titles {
+    font-size:50px;
+     font-weight: bold;
+ }
+
+ .text_titles2 {
+     font-size:40px;
+     font-weight: bold;
+
+ }
+
+ .savoir_plus {
+     opacity: 90%;
+     font-weight: bold;
+     font-size: 20px;
+ }
+
+ .pitch {
+    background-color: white;
+}
+
+
+
 
  @media (max-width:960px) {
      #laboxmobile {
