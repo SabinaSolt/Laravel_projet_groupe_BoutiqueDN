@@ -1,25 +1,9 @@
 
 
 
+@extends('layout.layout')
 
-
-<!DOCTYPE html>
-
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title> DN </title>
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ asset("css/homestyle.css") }}">
-
-</head>
-    <body>
-{{--@section('content')--}}
+@section('content')
 
     <header class="hero" >
         <div class="container ml-lg-15">
@@ -48,7 +32,7 @@
                     <div ><img class ="img-fluid container-fluid" src ="{{ asset("pictures/box.jpg") }}" alt ="labox"></div>
                 </td>
 
-                <td class ="col-lg-3">
+                <td class ="col-lg-3 ">
                     <div class ="text-white text_titles" id="laboxdesktop">LA BOX</div>
                     <div class ="text-white"><p class="text_description ">Découvrez nos boxes mensuelles, proposées à un tarif éthique et responsable.
                             Vous y trouverez des goodies, affiches exclusives et des épices
@@ -82,19 +66,19 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{ asset("pictures/chapka.jpg") }}" class="d-block " style="height:500px;width:auto;" alt="chapka">
-            <div class="carousel-caption d-none d-block">
-                <h5 class ="text_titles2 text-dark">ColdWear</h5>
-                <p  class="text_description">Retrouvez notre collection “Cold Wear”, tournée vers le meilleur
+            <img src="{{ asset("pictures/chapka.jpg") }}" class="d-block col-lg-9 " style="height:500px;width:auto;" alt="chapka">
+            <div class="carousel-caption d-block col-lg-3">
+                <h5 class ="text_titles2 text-dark ">ColdWear</h5>
+                <p  class="text_description text-dark ">Retrouvez notre collection “Cold Wear”, tournée vers le meilleur
                     de la mode avant 1991 et succombez ainsi
                     aux textiles d’époque et à une douceur incomparable...</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset("pictures/veste.jpg") }}" class="d-block " style="height:500px; " alt="veste">
+            <img src="{{ asset("pictures/veste.jpg") }}" class="d-block" style="height:500px; " alt="veste">
             <div class="carousel-caption d-none d-block">
-                <h5  class ="text_titles2 ">Perestroika</h5>
-                <p  class="text_description">Plus tourné vers le côté moderne ? Laissez vous tenter par la collection Perestroïka
+                <h5  class ="text_titles2 text-dark">Perestroika</h5>
+                <p  class="text_description text-dark">Plus tourné vers le côté moderne ? Laissez vous tenter par la collection Perestroïka
                     symbolisant trois axes prioritaires : “L'accélération, la démocratisation et la transparence !” :
                     Des designs minimalistes, des prix accessibles et des lignes épurées !</p>
             </div>
@@ -135,17 +119,5 @@
     </div>
 
 
-{{--@endsection--}}
+@endsection
 
-
-    </body>
-</html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
