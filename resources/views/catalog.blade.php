@@ -35,8 +35,8 @@
                         <div class="flex-row">
                             <div class="d-flex">
                                 <p>Ours Olympique</p>
-                                <img src="{{ asset ("pictures/share.png")}}"class="img-fluid ">
-                                <img src="{{ asset ("pictures/heart.png")}}"class="img-fluid">
+                                <button class="btn btn-outline-light"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
+                                <button class="btn btn-outline-light"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
                             </div>
                             <div class="barreFine font-weight-bold">
                                 40,00 €
