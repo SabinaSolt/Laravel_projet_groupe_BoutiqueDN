@@ -1,0 +1,44 @@
+
+head, body {
+    font-family: "Encode Sans";
+}
+ .hero {
+    background-image:url("../pictures/yolo.jpg");
+    background-position: right bottom;
+    height: 70vh;
+}
+
+ .hero h2 {
+     padding: 0;
+
+ }
+
+ .laboxtable {
+     background: linear-gradient(#c40c23 , #8b202e );
+
+
+ }
+ .slogan_bordo {
+     color: #8d1028;
+
+     font-weight: bold;
+ }
+
+ @media (max-width:960px) {
+     #laboxmobile {
+         opacity: 100%;
+         background: #c40c23 ;
+     }
+     #laboxdesktop {
+         opacity:0%;
+     }
+ }
+ @media (min-width: 961px) {
+     #laboxmobile {
+         opacity: 0%;
+     }
+     #laboxdesktop {
+         opacity:100%;
+     }
+ }
+
