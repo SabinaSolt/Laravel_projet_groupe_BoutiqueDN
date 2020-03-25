@@ -24,8 +24,32 @@
         </section>
 
         <div class="">
-            <button type="button" class="btn btn-outline-secondary float-right">Filtrer</button>
+            <button type="button" class="btn btn-outline-secondary float-right retraitFilter">Filtrer</button>
         </div>
+        <div>
+            <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
+        </div>
+        <div> <!-- partie texte sous la photo -->
+            <div>
+                Ours Olympique
+            </div>
+            <div class="barreFine font-weight-bold">
+                40,00 €
+            </div>
+        </div>
+<!-- deuxième ourson -->
+        <div>
+            <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
+        </div>
+        <div> <!-- partie texte sous la photo -->
+            <div>
+                Ours Olympique
+            </div>
+            <div class="barreFine font-weight-bold">
+                40,00 €
+            </div>
+        </div>
+<!-- troisième ourson -->
         <div>
             <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
         </div>
