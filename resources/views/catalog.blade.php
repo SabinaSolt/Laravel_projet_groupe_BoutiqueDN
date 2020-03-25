@@ -26,41 +26,43 @@
         <div class="">
             <button type="button" class="btn btn-outline-secondary float-right retraitFilter">Filtrer</button>
         </div>
-        <div>
-            <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
-        </div>
-        <div> <!-- partie texte sous la photo -->
-            <div>
-                Ours Olympique
-            </div>
-            <div class="barreFine font-weight-bold">
-                40,00 €
-            </div>
-        </div>
-<!-- deuxième ourson -->
-        <div>
-            <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
-        </div>
-        <div> <!-- partie texte sous la photo -->
-            <div>
-                Ours Olympique
-            </div>
-            <div class="barreFine font-weight-bold">
-                40,00 €
-            </div>
-        </div>
-<!-- troisième ourson -->
-        <div>
-            <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid">
-        </div>
-        <div> <!-- partie texte sous la photo -->
-            <div>
-                Ours Olympique
-            </div>
-            <div class="barreFine font-weight-bold">
-                40,00 €
-            </div>
-        </div>
+        <section class="flex-row">
+            <section class="col-lg-3- col-lg-3 col-md-3">
+                <div class="align-content-lg-center">
+                    <!-- first teddy bear-->
+                    <div class="col-lg-3">
+                        <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+                        <div>
+                            Ours Olympique
+                            <div class="barreFine font-weight-bold">
+                                40,00 €
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second teddy bear-->
+                    <div class="col-lg-3">
+                        <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+                        <div>
+                            Ours Olympique
+                            <div class="barreFine font-weight-bold">
+                                40,00 €
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third teddy bear -->
+                    <div class="col-lg-3">
+                        <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+                        <div>
+                            Ours Olympique
+                            <div class="barreFine font-weight-bold">
+                                40,00 €
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
 
     </body>
 </html>
