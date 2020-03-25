@@ -1,5 +1,4 @@
 body{
-    background-color: #DADADA;
     font-family: "Encode Sans", serif;
 }
 
@@ -12,11 +11,15 @@ body{
 
 @media screen and (min-width: 430px) {
     .cadreGrey{
-        border: 1px solid grey;
+        border: 3px solid #e5e5e5;
         border-radius: 10px;
+        padding: 10px;
     }
     .hidden{
         display: none;
+    }
+    body{
+        background-color: white;
     }
 }
 
@@ -25,6 +28,9 @@ body{
         border-bottom: 1px solid black;
         margin-bottom: 20px;
         padding: 20px;
+    }
+    body{
+        background-color: #DADADA;
     }
 }
 
