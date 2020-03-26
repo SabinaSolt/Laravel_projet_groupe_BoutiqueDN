@@ -10,7 +10,7 @@
         </div>
     </section>
     <div>
-        <button type="button" class="btn btn-outline-secondary float-right retraitFilter hidden">Filtrer</button>
+        <button type="button" class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">Filtrer</button>
     </div>
     <div class="d-flex flex-wrap">
         <!-- container global-->
@@ -41,8 +41,8 @@
             </div>
         </section>
         <!-- first teddy bear-->
-        <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
-            <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+        <div class="offset-1 col-sm-3 col-md-3 col-lg-3 border border-secondary rounded">
+            <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid rounded">
             <div class="flex-row">
                 <div class="d-flex align-items-center">
                     <p>Ours Olympique</p>
