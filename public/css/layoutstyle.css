@@ -1,5 +1,5 @@
 body{
-    font-family: "Encode Sans";
+    font-family: "Encode Sans Expanded";
 }
 
 .footer{
@@ -9,10 +9,7 @@ body{
     bottom : fixed;
 }
 
-.navbar:hover{
-    color:rgba(141, 16, 40);
 
-}
 .btn-default
 
 {
@@ -34,4 +31,3 @@ body{
     border-color: lightgray;
 
 }
-

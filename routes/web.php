@@ -32,3 +32,11 @@ Route::get('/cart', function () {
 Route::get('/hometest', function () {
     return view('hometest');
 });
+
+Route::get('/tirages', function () {
+    return view('tirages');
+});
+
+Route::get('/box', function () {
+    return view('box');
+});
