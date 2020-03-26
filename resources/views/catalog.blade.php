@@ -16,6 +16,7 @@
         <div class="d-flex flex-wrap">
             <!-- container global-->
             <section class="d-flex align-items-center">
+                <!-- text left -->
                 <div class="d-none d-sm-block ">
                     <ul class="list-group mb-3">
                         <li class="list-group text-capitalize font-weight-bolder list-group-item-action">catégories</li>
@@ -40,49 +41,50 @@
                         <li><button type="button" class="btn btn-light">0€</button>-----------------<button type="button" class="btn btn-light">1 000€</button></li>
                     </ul>
                 </div>
+                <!-- first teddy bear-->
+                <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
+                    <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid rounded">
+                    <div class="flex-row">
+                        <div class="d-flex align-items-center">
+                            <p>Ours Olympique</p>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
+                        </div>
+                        <div class="barreFine font-weight-bold">
+                            <p>40,00 €</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- second teddy bear-->
+                <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
+                    <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+                    <div class="flex-row">
+                        <div class="d-flex align-items-center">
+                            <p>Ours Olympique</p>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
+                        </div>
+                        <div class="barreFine font-weight-bold">
+                            <p>40,00 €</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- third teddy bear -->
+                <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
+                    <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
+                    <div class="flex-row">
+                        <div class="d-flex align-items-center">
+                            <p>Ours Olympique</p>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
+                            <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
+                        </div>
+                        <div class="barreFine font-weight-bold">
+                            <p>40,00 €</p>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <!-- first teddy bear-->
-            <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
-                <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid rounded">
-                <div class="flex-row">
-                    <div class="d-flex align-items-center">
-                        <p>Ours Olympique</p>
-                        <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
-                        <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
-                    </div>
-                    <div class="barreFine font-weight-bold">
-                        <p>40,00 €</p>
-                    </div>
-                </div>
-            </div>
-            <!-- second teddy bear-->
-            <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
-                <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
-                <div class="flex-row">
-                    <div class="d-flex align-items-center">
-                        <p>Ours Olympique</p>
-                        <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
-                        <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
-                    </div>
-                    <div class="barreFine font-weight-bold">
-                        <p>40,00 €</p>
-                    </div>
-                </div>
-            </div>
-            <!-- third teddy bear -->
-            <div class="offset-1 col-sm-3 col-md-3 col-lg-3 cadreGrey">
-                <img src="{{ asset("pictures/ours_olympique.jpg") }}" alt="image ours" class="img-fluid ">
-                <div class="flex-row">
-                    <div class="d-flex align-items-center">
-                        <p>Ours Olympique</p>
-                        <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
-                        <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
-                    </div>
-                    <div class="barreFine font-weight-bold">
-                        <p>40,00 €</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </body>
 
