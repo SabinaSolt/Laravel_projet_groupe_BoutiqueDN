@@ -43,10 +43,14 @@
                 <li class="list-group">accessoires</li>
                 <li class="list-group">boxes</li>
             </ul>
-            <ul class="list-group mb-3">
+            <ul class="list-group mb-5">
                 <li class="list-group text-capitalize font-weight-bolder list-group-item-action">collections</li>
                 <li class="list-group">coldwear</li>
                 <li class="list-group">perestroïka</li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group text-capitalize font-weight-bolder list-group-item-action">marge de prix</li>
+                <li><button type="button" class="btn btn-light">0€</button>-----------------<button type="button" class="btn btn-light">1 000€</button></li>
             </ul>
         </div>
     </section>
