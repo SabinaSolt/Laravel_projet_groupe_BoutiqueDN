@@ -2,14 +2,7 @@
 head, body {
     font-family: "Encode Sans Expanded";
 }
- .hero {
-    background-image:url("../pictures/yolo.jpg");
-    background-position: center bottom;
 
-        min-height:200px;
-     height:30vh;
-
-}
 
  .hero h2 {
      padding: 0;
@@ -60,10 +53,18 @@ head, body {
      #laboxmobile {
          opacity: 100%;
          background: #c40c23 ;
+        text-align:center;
      }
      #laboxdesktop {
          opacity:0%;
      }
+     .hero_slogan {
+         background-image:url("../pictures/yolom.jpg");
+         background-position: center bottom;
+         height:400px;
+
+     }
+
  }
  @media (min-width: 961px) {
      #laboxmobile {
@@ -72,5 +73,19 @@ head, body {
      #laboxdesktop {
          opacity:100%;
      }
+     .hero_slogan {
+         background-image:url("../pictures/yolo.jpg");
+         background-position: center bottom;
+         height:65vh;
+
+     }
  }
 
+@media (max-width:540px) {
+    .hero_slogan {
+        background-image:url("../pictures/yolos.jpg");
+        background-position: center bottom;
+        height:200px;
+
+    }
+}
