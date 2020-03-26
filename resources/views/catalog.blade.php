@@ -28,22 +28,22 @@
 </div>
 <div class="d-flex flex-wrap">
     <!-- container global-->
-    <section>
-        <div class="d-none d-sm-block">
-            <ul class="list-group">
+    <section class="d-flex align-items-center">
+        <div class="d-none d-sm-block ">
+            <ul class="list-group mb-3">
                 <li class="list-group text-capitalize font-weight-bolder list-group-item-action">catégories</li>
                 <li class="list-group">hommes</li>
                 <li class="list-group">femmes</li>
                 <li class="list-group">enfant</li>
                 <li class="list-group">bébés</li>
             </ul>
-            <ul class="list-group">
+            <ul class="list-group mb-3">
                 <li class="list-group text-capitalize font-weight-bolder list-group-item-action">produits</li>
                 <li class="list-group">vêtements</li>
                 <li class="list-group">accessoires</li>
                 <li class="list-group">boxes</li>
             </ul>
-            <ul class="list-group">
+            <ul class="list-group mb-3">
                 <li class="list-group text-capitalize font-weight-bolder list-group-item-action">collections</li>
                 <li class="list-group">coldwear</li>
                 <li class="list-group">perestroïka</li>
