@@ -100,9 +100,9 @@
 
 
 {{--Partie tirage photo "Histoire en images"--}}
-    <div class ="container text-center photo_histoire">
-        <div  class="text_titles2">L'HISTORE EN IMAGES</div>
-        <div><p class="text_description">Vous souhaitez apporter un côté rétro dans vos lieux de vie et de collaboration commune?
+    <div class ="container text-center photo_histoire p-10">
+        <div  class="text_titles2 py-5">L'HISTORE EN IMAGES</div>
+        <div><p class="text_description pb-3">Vous souhaitez apporter un côté rétro dans vos lieux de vie et de collaboration commune?
 
                 Une large bibliothèque de tirages photo où vous aurez la possibilité d’obtenir,
                 en qualité d’époque, des cartes postales et posters témoins de l’histoire.
@@ -113,9 +113,9 @@
     </div>
 
 {{--    Container "plus d'articles"--}}
-    <div class="container text-center plus_articles">
-        <div class="text_titles text_titles2">Plus d'articles</div>
-        <div  class="text_titles2">Pour elle</div>
+    <div class="container text-center plus_articles p-10 ">
+        <div class="text_titles text_titles2 py-5">Plus d'articles</div>
+        <div  class="text_description text_titles2">Pour elle</div>
         <img class ="img-fluid container-fluid" src ="{{ asset("pictures/chemise_large.jpg") }}" alt ="pour_elle">
 
     </div>
