@@ -6,13 +6,11 @@
 @section('content')
 
     <header class="hero_slogan " >
-        <div class="container ml-lg-15">
+        <div class="container ">
             <h2 class ="container slogan_bordo mb-0" style="font-size:200%;">Moins</h2>
             <h2 class ="container mb-0"  style="font-size:130%;">c'est</h2>
             <h2 class ="container slogan_bordo "  style="font-size:300%;margin-top:-1.5vh;">mieux </h2>
         </div>
-
-
     </header>
     <div class="jumbotron pitch  my-lg-15">
         <p class="text_description text-lg-center "> D.N pour Droujba Narodov, signifie littéralement en russe  “L’amitié des peuples”. </p>
@@ -47,8 +45,8 @@
     </div>
 
 {{--Partie "Collections"--}}
-    <div class="container collections ">
-        <div class="text_titles2 ">COLLECTIONS</div>
+    <div class="container text-center collections py-5">
+        <div class="text_titles2 pb-5">COLLECTIONS</div>
         <div><p class="text_description">Retrouvez nos collections,
                 inspirées des époques marquantes de l’histoire du communisme.
             </p>
@@ -64,19 +62,19 @@
         <li data-target="#carouselCaptions" data-slide-to="1"></li>
 
     </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active ">
-            <div class="  float-left"><img src="{{ asset("pictures/chapka.jpg") }}"  style="height:500px;width:auto;" alt="chapka"></div>
-            <div class="carousel-caption float-right">
+    <div class="carousel-inner d-flex ">
+        <div class="carousel-item active row">
+            <div class="col-lg-6"><img src="{{ asset("pictures/chapka.jpg") }}"  style="height:500px;width:auto;" alt="chapka"></div>
+            <div class="carousel-caption col-lg-4">
                 <h5 class ="text_titles2 text-dark ">ColdWear</h5>
                 <p  class="text_description text-dark ">Retrouvez notre collection “Cold Wear”, tournée vers le meilleur
                     de la mode avant 1991 et succombez ainsi
                     aux textiles d’époque et à une douceur incomparable...</p>
             </div>
         </div>
-        <div class="carousel-item">
-            <img src="{{ asset("pictures/veste.jpg") }}" class="d-block" style="height:500px; " alt="veste">
-            <div class="carousel-caption d-none d-block">
+        <div class="carousel-item row">
+            <div class="col-lg-6 "><img src="{{ asset("pictures/veste.jpg") }}" class="d-block" style="height:500px; " alt="veste"></div>
+            <div class="carousel-caption col-lg-4">
                 <h5  class ="text_titles2 text-dark">Perestroika</h5>
                 <p  class="text_description text-dark">Plus tourné vers le côté moderne ? Laissez vous tenter par la collection Perestroïka
                     symbolisant trois axes prioritaires : “L'accélération, la démocratisation et la transparence !” :
@@ -113,10 +111,18 @@
     </div>
 
 {{--    Container "plus d'articles"--}}
-    <div class="container text-center plus_articles p-10 ">
-        <div class="text_titles text_titles2 py-5">Plus d'articles</div>
-        <div  class="text_description text_titles2">Pour elle</div>
-        <img class ="img-fluid container-fluid" src ="{{ asset("pictures/chemise_large.jpg") }}" alt ="pour_elle">
+    <div class="container plus_articles p-10">
+        <div class=" text_titles2 py-5 text-center col-12">Plus d'articles</div>
+        <div class="row ">
+            <div class="col-6">
+                <div  class="text_description pour_elle">Pour elle</div>
+                <img class ="img-fluid container-fluid " src ="{{ asset("pictures/chemise_large.jpg") }}" alt ="pour_elle">
+            </div>
+            <div class="col-6">
+                <div  class="text_description pour_elle text-light">Pour lui</div>
+                <img class ="img-fluid container-fluid " src ="{{ asset("pictures/manteau.jpg") }}" alt ="pour_lui">
+            </div>
+        </div>
 
     </div>
 
