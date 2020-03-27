@@ -18,20 +18,17 @@ Route::get('/', function () {
 });
 
 Route::get('/product', function () {
-    return view('product');
+    return view('/product/product');
 });
 
 Route::get('/catalog', function () {
-    return view('catalog');
+    return view('/product/catalog');
 });
 
 Route::get('/cart', function () {
-    return view('cart');
+    return view('cart/cart');
 });
 
-Route::get('/hometest', function () {
-    return view('hometest');
-});
 
 Route::get('/tirages', function () {
     return view('tirages');
