@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{asset("/css/catalogstyles.css")}}">
+
 
     <body class="container-fluid">
         <!-- titre-->
