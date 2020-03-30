@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/product/{productId}','ProductController@show' );
+Route::get('/product/{productId}','ProductController@show' )->name('products.show');
 
 Route::get('/catalog', 'ProductController@index');
 
