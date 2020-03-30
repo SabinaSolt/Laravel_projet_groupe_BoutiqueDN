@@ -17,13 +17,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/product', function () {
-    return view('/product/product');
-});
+Route::get('/product/{productId}','ProductController@show' );
 
-Route::get('/catalog', function () {
-    return view('/product/catalog');
-});
+Route::get('/catalog', 'ProductController@index');
+
+
 
 Route::get('/cart', function () {
     return view('cart/cart');
