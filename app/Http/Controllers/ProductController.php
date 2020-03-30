@@ -12,7 +12,9 @@ class ProductController extends Controller
 {
    public function index()
    {
-        return view ('product.catalog');
+       $items=DB::select('SELECT * FROM produit', [1]);
+//       dd($items);
+        return view ('product.catalog', ['items'=>$items]);
    }
 
    public function show($productId)
