@@ -55,6 +55,10 @@
                             </button>
                         </a>
                     @endif
+                        <a href="{{route('products.create')}}">
+                            <button class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">créer un produit
+                            </button>
+                        </a>
                 </div>
             </div>
             <!-- first teddy bear-->

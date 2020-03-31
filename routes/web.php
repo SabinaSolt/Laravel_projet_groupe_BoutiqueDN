@@ -17,9 +17,13 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/product/{productId}','ProductController@show' )->name('products.show');
+Route::get('/products/create', 'ProductController@create')->name('products.create');
+Route::post('/products', 'ProductController@store')->name('products.store');
+
+Route::get('/products/{productId}','ProductController@show' )->name('products.show');
 
 Route::get('/catalog', 'ProductController@index')->name('catalog');
+
 
 
 

@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 use App\Product;
 use Illuminate\Http\Request;
 
+
 class ProductController extends Controller
 {
    public function index(Request $request)
@@ -21,15 +22,38 @@ class ProductController extends Controller
         return view ('product.catalog', ['items'=>$items,'sortby'=>$sort]);
    }
 
+    public function store(Request $request)
+    {
+
+        $newitem = new Product;
+        $newitem->name=$request->input('name');
+        $newitem->description=$request->input('description');
+        $newitem->image=$request->input('image');
+        $newitem->price=$request->input('price');
+        $newitem->categoryId=$request->input('category');
+        $newitem->save();
+        $lastid=DB::getPdo()->lastInsertId();
+
+        $lastitem=Product::where('id', $lastid)->first();
+        return view ('product.confirm-save-product', ['lastitem'=>$lastitem]);
+    }
 
 
    public function show($productId)
    {
        $productId=intval($productId);
-
 //       $item=DB::select('SELECT * FROM products WHERE id=:id', ['id'=>$productId]);
-       $item=Product::where('id',$productId)->firstOrFail();
-//       dd($item[0]);
+
+       $item=Product::where('id',$productId)->first();
+
+
        return view ('product.product', ['item'=>$item]);
    }
+
+
+    public function create()
+    {
+
+        return view('product/add-product');
+    }
 }

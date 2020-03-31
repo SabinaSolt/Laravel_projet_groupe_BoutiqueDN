@@ -7,8 +7,12 @@
             <div class="flex-row">
                 <div class="d-flex align-items-center">
                     <p>{{$item->name}}</p>
-                    <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/share.png")}}"class="img-fluid "></button>
-                    <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img src="{{ asset ("pictures/heart.png")}}"class="img-fluid"></button>
+                    <button class="btn btn-outline-light btn-sm d-none d-sm-block">
+                        <img src="{{ asset ("pictures/share.png")}}"class="img-fluid ">
+                    </button>
+                    <button class="btn btn-outline-light btn-sm d-none d-sm-block">
+                        <img src="{{ asset ("pictures/heart.png")}}"class="img-fluid">
+                    </button>
                 </div>
                 <p>{{$item->description}}</p>
                 <div class="barreFine font-weight-bold">
