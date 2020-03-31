@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::get('/product/{productId}','ProductController@show' )->name('products.show');
 
 Route::get('/catalog', 'ProductController@index');
-
+Route::get('/catalog/sortbyprice', 'ProductController@sortByPrice');
 
 
 Route::get('/cart', function () {

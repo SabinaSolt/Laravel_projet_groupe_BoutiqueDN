@@ -43,8 +43,18 @@
                     </li>
                 </ul>
                 <div>
-                    <button type="button" class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">Filtrer
-                    </button>
+                    <form action="" method="get">
+                        @if($sortby=='name')
+                            <button type="submit" formaction="/catalog/sortbyprice"
+                                    class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">Trier par prix
+                            </button>
+                         @endif
+                        @if($sortby=='price')
+                            <button type="submit" formaction="/catalog"
+                                    class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">Trier par nom
+                            </button>
+                        @endif
+                    </form>
                 </div>
             </div>
             <!-- first teddy bear-->
@@ -53,21 +63,21 @@
                 <div class="d-flex flex-wrap">
                     @foreach($items as $item)
                         <div class="col-md-4 cadreGrey">
-                           <a href="{{$url=route('products.show',['productId'=>$item->idProduit])}}">
-                               <img src="{{ asset($item->imageProduit) }}" alt="{{$item->nomProduit}}"class="img-fluid rounded">
+                           <a href="{{route('products.show',['productId'=>$item->id])}}">
+                               <img src="{{ asset($item->image) }}" alt="{{$item->name}}" class="img-fluid rounded" >
                            </a>
 
                             <div class="flex-row">
                                 <div class="d-flex align-items-center">
-                                    <p>{{$item->nomProduit}}</p>
+                                    <p>{{$item->name}}</p>
                                     <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img
                                             src="{{ asset ("pictures/share.png")}}" class="img-fluid "></button>
                                     <button class="btn btn-outline-light btn-sm d-none d-sm-block"><img
                                             src="{{ asset ("pictures/heart.png")}}" class="img-fluid"></button>
                                 </div>
-                                <p>{{$item->descriptionProduit}}</p>
+                                <p>{{$item->description}}</p>
                                 <div class="barreFine font-weight-bold">
-                                    <p>{{$item->prix}} €</p>
+                                    <p>{{$item->price}} €</p>
                                 </div>
 {{--                                <button class ="btn-secondary" type="submit">Voir détail</button>--}}
                             </div>

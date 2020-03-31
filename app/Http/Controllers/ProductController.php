@@ -7,24 +7,32 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\DB;
+use App\Product;
 
 class ProductController extends Controller
 {
    public function index()
    {
-       $items=DB::select('SELECT * FROM produit', [1]);
-//       dd($items);
-        return view ('product.catalog', ['items'=>$items]);
+//       $items=DB::select('SELECT * FROM products');
+       $items=Product::select('id', 'name','image','description','price')->get()->sortBy('name', '2');
+        return view ('product.catalog', ['items'=>$items,'sortby'=>'name']);
    }
+
+    public function sortByPrice()
+    {
+
+        $items=Product::select('id', 'name','image','description','price')->get()->sortBy('price', '1');
+
+        return view ('product.catalog', ['items'=>$items,'sortby'=>'price']);
+    }
 
    public function show($productId)
    {
-//       $item=DB::table('produit')->where('idProduit',16)->first();
-       $productId=htmlspecialchars($productId);
-       $item=DB::select('SELECT * FROM produit WHERE idProduit=:id', ['id'=>$productId]);
+       $productId=intval($productId);
+
+//       $item=DB::select('SELECT * FROM products WHERE id=:id', ['id'=>$productId]);
+       $item=Product::where('id',$productId)->firstOrFail();
 //       dd($item[0]);
-       return view ('product.product', [
-           'item'=>$item[0]
-       ]);
+       return view ('product.product', ['item'=>$item]);
    }
 }
