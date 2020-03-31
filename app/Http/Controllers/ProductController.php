@@ -8,23 +8,20 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\DB;
 use App\Product;
+use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-   public function index()
+   public function index(Request $request)
    {
+       $sort = $request->input('sort', 'name');
+
 //       $items=DB::select('SELECT * FROM products');
-       $items=Product::select('id', 'name','image','description','price')->get()->sortBy('name', '2');
-        return view ('product.catalog', ['items'=>$items,'sortby'=>'name']);
+       $items=Product::select('id', 'name','image','description','price')->get()->sortBy($sort);
+        return view ('product.catalog', ['items'=>$items,'sortby'=>$sort]);
    }
 
-    public function sortByPrice()
-    {
 
-        $items=Product::select('id', 'name','image','description','price')->get()->sortBy('price', '1');
-
-        return view ('product.catalog', ['items'=>$items,'sortby'=>'price']);
-    }
 
    public function show($productId)
    {

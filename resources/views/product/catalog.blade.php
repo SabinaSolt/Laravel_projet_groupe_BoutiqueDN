@@ -15,7 +15,7 @@
         <!-- container global-->
         <section class="d-flex ">
             <!-- text left -->
-            <div class="d-none d-sm-block pr-5">
+            <div class="d-none d-sm-block pr-5 ">
                 <ul class="list-group mb-3">
                     <li class="list-group text-capitalize font-weight-bolder list-group-item-action">catégories</li>
                     <li class="list-group">hommes</li>
@@ -43,18 +43,18 @@
                     </li>
                 </ul>
                 <div>
-                    <form action="" method="get">
-                        @if($sortby=='name')
-                            <button type="submit" formaction="/catalog/sortbyprice"
-                                    class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">Trier par prix
+                    @if($sortby=='name')
+                        <a href="{{route('catalog', ['sort' => 'price'])}}">
+                            <button class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">Trier par prix
                             </button>
-                         @endif
-                        @if($sortby=='price')
-                            <button type="submit" formaction="/catalog"
-                                    class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">Trier par nom
+                        </a>
+                    @endif
+                    @if($sortby=='price')
+                        <a href="{{route('catalog', ['sort' => 'name'])}}">
+                            <button class="btn btn-outline-secondary float-right mb-3 d-none d-sm-block">Trier par nom
                             </button>
-                        @endif
-                    </form>
+                        </a>
+                    @endif
                 </div>
             </div>
             <!-- first teddy bear-->
