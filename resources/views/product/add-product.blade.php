@@ -8,6 +8,15 @@
         <div class="panel-body">
             <form class="" action="/products" method="post">
                 {{ csrf_field() }}
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 <div class="form-group">
                     <label for="name">Nom du produit:</label>
                     <input type="text" class="form-control" name="name" placeholder="name">

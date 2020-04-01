@@ -8,6 +8,15 @@
             <form class="" action="{{route('products.update',['productId'=>$item->id])}}" method="post">
                 {{method_field('PUT')}}
                 {{ csrf_field() }}
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 <h3>Id:</h3>
                 <p><b>{{ $item->id }}</b></p>
                 <input type="hidden" class="form-control" name="id" value="{{ $item->id }}">
@@ -32,6 +41,7 @@
                 <p><b>{{ $item->categoryId}}</b></p>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
+
             </form>
 
         </div>

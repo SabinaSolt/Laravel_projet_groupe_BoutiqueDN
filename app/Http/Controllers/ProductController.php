@@ -27,7 +27,15 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-//        $request->validate(['name'=>'required','price'=>'required|integer|gt:0']);
+//
+        $request->validate([
+            'name'=>'required|max:255',
+            'price'=>'required|integer|gt:0',
+            'weight'=>'required|integer|min:1',
+            'stockquantity'=>'required|integer|min:0',
+            'available'=>'required',
+            'categoryId'=>'required'
+        ]);
         $newitem = Product::create($request->all());
 
 //        $newitem->name=$request->input('name');
@@ -52,6 +60,12 @@ class ProductController extends Controller
 
     public function update(Product $productId, Request $request)
     {
+
+        $request->validate([
+            'name'=>'required|max:255',
+            'price'=>'required|integer|min:0'
+        ]);
+
         $productId->update($request->all());
         return view('product.confirm-edit-product',['item'=>$productId]);
     }
