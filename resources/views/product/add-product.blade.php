@@ -26,8 +26,8 @@
                     <input type="number" class="form-control" name="price" placeholder="0.00">
                 </div>
                 <div class="form-group">
-                    <label for="category">Categorie du produit</label>
-                    <select name="category" class="form-control">
+                    <label for="categoryId">Categorie du produit:</label>
+                    <select name="categoryId" class="form-control">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

@@ -21,7 +21,7 @@
             <h3>prix:</h3>
             <p><b>{{ $lastitem->price }}</b></p>
 
-            <h3>Categorie du produit</h3>
+            <h3>Categorie du produit:</h3>
             <p><b>{{ $lastitem->categoryId}}</b></p>
 
         </div>
