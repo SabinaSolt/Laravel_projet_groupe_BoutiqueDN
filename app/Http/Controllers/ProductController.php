@@ -16,7 +16,6 @@ class ProductController extends Controller
    public function index(Request $request)
    {
        $sort = $request->input('sort', 'name');
-//       $items=DB::select('SELECT * FROM products');
        $items=Product::select('id', 'name','image','description','price')->get()->sortBy($sort);
         return view ('product.catalog', ['items'=>$items,'sortby'=>$sort]);
    }
@@ -28,51 +27,39 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        $newitem = new Product;
-        $newitem->name=$request->input('name');
-        $newitem->description=$request->input('description');
-        $newitem->image=$request->input('image');
-        $newitem->price=$request->input('price');
-        $newitem->categoryId=$request->input('categoryId');
-        $newitem->save();
-        $lastid=DB::getPdo()->lastInsertId();
+//        $request->validate(['name'=>'required','price'=>'required|integer|gt:0']);
+        $newitem = Product::create($request->all());
 
-        $lastitem=Product::where('id', $lastid)->first();
-       // dd($lastitem);
-        return view ('product.confirm-save-product', ['lastitem'=>$lastitem]);
+//        $newitem->name=$request->input('name');
+//        $newitem->save();
+//        $lastid=DB::getPdo()->lastInsertId();
+
+        return view ('product.confirm-save-product', ['item'=>$newitem]);
     }
 
 
-   public function show($productId)
+   public function show(Product $productId)
    {
-       $productId=intval($productId);
 //       $item=DB::select('SELECT * FROM products WHERE id=:id', ['id'=>$productId]);
-       $item=Product::where('id',$productId)->first();
-       return view ('product.product', ['item'=>$item]);
+//       $item=Product::where('id',$productId)->first();
+       return view ('product.product', ['item'=>$productId]);
    }
 
-    public function edit(Request $request)
+    public function edit(Product $productId)
     {
-        $id=$request->input('id');
-        $item=Product::where('id',$id)->first();
-        return view('product.edit-product',['item'=>$item]);
-    }
-    public function update(Request $request)
-    {
-        $id=$request->input('id');
-        $item=Product::where('id',$id)->first();
-        $item->name=$request->input('name');
-        $item->price=$request->input('price');
-        $item->save();
-
-        return view('product.confirm-edit-product',['item'=>$item]);
+        return view('product.edit-product',['item'=>$productId]);
     }
 
-    public function delete(Request $request)
+    public function update(Product $productId, Request $request)
     {
-        $id=$request->input('id');
-        Product::destroy($id);
-        return view('product.confirm-delete-product',['id'=>$id]);
+        $productId->update($request->all());
+        return view('product.confirm-edit-product',['item'=>$productId]);
+    }
+
+    public function delete(Product $productId)
+    {
+        $productId->delete();
+        return view('product.confirm-delete-product',['id'=>$productId->id]);
     }
 
 }

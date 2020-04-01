@@ -7,22 +7,31 @@
         </div>
         <div class="panel-body">
             <h3>Id:</h3>
-            <p><b>{{ $lastitem->id }}</b></p>
+            <p><b>{{ $item->id }}</b></p>
 
             <h3>Nom du produit:</h3>
-            <p><b>{{ $lastitem->name }}</b></p>
+            <p><b>{{ $item->name }}</b></p>
 
             <h3>Description:</h3>
-            <p><b>{{ $lastitem->description }}</b></p>
+            <p><b>{{ $item->description }}</b></p>
 
             <h3>L'image:</h3>
-            <p><b><img src="{{ asset($lastitem->image)}}"class="img-fluid" style="max-height:500px;"></b></p>
+            <p><b><img src="{{ asset($item->image)}}"class="img-fluid" style="max-height:500px;"></b></p>
 
             <h3>prix:</h3>
-            <p><b>{{ $lastitem->price }}</b></p>
+            <p><b>{{ $item->price }}</b></p>
+
+            <h3>poids en gramme:</h3>
+            <p><b>{{ $item->weight }}</b></p>
+
+            <h3>quantité en stock:</h3>
+            <p><b>{{ $item->stockquantity }}</b></p>
+
+            <h3>Disponible à la vente:</h3>
+            <p><b>{{ $item->available }}</b></p>
 
             <h3>Categorie du produit:</h3>
-            <p><b>{{ $lastitem->categoryId}}</b></p>
+            <p><b>{{ $item->categoryId}}</b></p>
 
         </div>
     </div>

@@ -6,7 +6,5 @@
             <h2 class="panel-title">Le produit avec #ID {{ $id }}
                 a été supprimé de la base de données</h2>
         </div>
-
     </div>
-
 @endsection

@@ -26,6 +26,21 @@
                     <input type="number" class="form-control" name="price" placeholder="0.00">
                 </div>
                 <div class="form-group">
+                    <label for="weight">poids en gramme:</label>
+                    <input type="number" class="form-control" name="weight" placeholder="000">
+                </div>
+                <div class="form-group">
+                    <label for="stockquantity">quantité en stock:</label>
+                    <input type="number" class="form-control" name="stockquantity" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="available">Disponible à la vente:</label>
+                    <select name="available" class="form-control">
+                        <option value="1">oui</option>
+                        <option value="0">non</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="categoryId">Categorie du produit:</label>
                     <select name="categoryId" class="form-control">
                         <option value="1">1</option>
